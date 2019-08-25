@@ -1,0 +1,40 @@
+h2 {
+    font-size: 2em;
+    font-family: consolas;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #031321;
+}
+
+.container {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container a {
+    position: relative;
+    display: block;
+    margin: 20px 0;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    background: #255784;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.container a:hover {
+    background-color: #2196f3;
+}
