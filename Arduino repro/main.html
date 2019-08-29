@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drive</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <script src="script/jquery.js"></script>
+    <script src="script/myscript.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="log">
+            <form name="myform" action="" method="GET">
+                <h2>IP Webcam (IP):</h2>
+                <input type="text" name="inputbox" value="192.168.0.11">
+                <input type="button" name="button1" value="Cargar" onClick="readUrlAV(this.form)">
+                </label>
+            </form>
+            <form name="myform2" action="" method="GET">
+                <h2>Arduino IP Address:</h2>
+                <input type="text" name="inputbox" Value="192.168.0.5">
+                <input type="button" name="button3" Value="Prueba" onClick="testarArduino(this.form)">
+            </form>
+        </div>
+        <div class="vi">
+            <div class="video">
+                <object class="play" id="video" type="text/html" data="http://192.168.0.5:8080/video">
+                        </object>
+            </div>
+            <object class="play" id="audio" type="text/html" data="http://192.168.0.5:8080/audio.opus"></object>
+        </div>
+        <div class="container">
+            <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+            <a href="#">Top</a>
+            <a href="#">Right</a>
+            <a href="#">Bottom</a>
+        </div>
+    </div>
+</body>
+
+</html>
